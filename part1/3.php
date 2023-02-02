@@ -2,15 +2,16 @@
 //3. Найти все четные четырехзначные числа, цифры которых следуют в порядке возрастания или
 //убывания.
 
-function getAllSequenceNumbers(){
-    for ($number = 1000; $number < 10000; $number++){
+function getAllSequenceNumbers()
+{
+    for ($number = 1000; $number < 10000; $number++) {
 //        if (getIfAscending($number) || getIfDescending($number)){
 //            echo $number . "<br>";
 //        }
-        if (getIfDescending($number)){
+        if (getIfDescending($number)) {
             echo $number . " descending <br>";
         }
-        if (getIfAscending($number)){
+        if (getIfAscending($number)) {
             echo $number . " ascending <br>";
         }
     }
