@@ -3,14 +3,15 @@
 
 $number = 88553300;
 
-function getDigitsLessThanFive($number){
+function getDigitsLessThanFive($number)
+{
     $counter = 0;
-    while ($number >1){
+    while ($number > 1) {
         $digit = $number % 10;
-        if($digit < 5){
+        if ($digit < 5) {
             $counter++;
         }
-        $number = (int)$number/10;
+        $number = (int)$number / 10;
     }
     return $counter;
 }
