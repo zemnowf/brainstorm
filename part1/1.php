@@ -4,7 +4,8 @@
 $number = 88553300;
 
 function getDigitsLessThanFive($number){
-    for ($i = 0, $counter = 0; $number > 1; $i++){
+    $counter = 0;
+    while ($number >1){
         $digit = $number % 10;
         if($digit < 5){
             $counter++;
