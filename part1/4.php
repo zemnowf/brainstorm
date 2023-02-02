@@ -11,7 +11,8 @@ function getNumbersWithDigits()
     }
 }
 
-function checkCondition($currentNumber){
+function checkCondition($currentNumber)
+{
     $number = $currentNumber;
     $d4 = $number % 10;
     if ($d4 == 2 || $d4 == 3 || $d4 == 7 || $d4 == 0) {
@@ -23,7 +24,7 @@ function checkCondition($currentNumber){
             if ($d2 !== $d3 and $d2 !== $d4 and $d2 == 2 || $d2 == 3 || $d2 == 7 || $d2 == 0) {
                 $number = (int)($number / 10);
                 $d1 = $number;
-                if ($d1 !== $d2 and $d1 !== $d3 and $d1 !== $d4 and $d1 == 2 || $d1 == 3 || $d1 == 7){
+                if ($d1 !== $d2 and $d1 !== $d3 and $d1 !== $d4 and $d1 == 2 || $d1 == 3 || $d1 == 7) {
                     echo $currentNumber . "<br>";
                 }
             }
