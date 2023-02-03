@@ -34,8 +34,6 @@ function solveArray(array $arr)
         . countElementsBeforeFirstNegative($arr) . "<br>";
     echo "Сумма нечетных элементов после последнего отрицательного: "
         . countSumOfOddElementsAfterLastNegative($arr) . "<br>";
-
-
 }
 
 solveArray(array(1, 2, -1, 4, 5));
