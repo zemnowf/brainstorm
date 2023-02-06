@@ -40,13 +40,13 @@ function findMinMaxInSequenceRows(array $arr)
             $max = $arr[$i][0];
             $minKey = 0;
             $maxKey = 0;
-            for ($j = 1; $j < $M; $j++){
+            for ($j = 1; $j < $M; $j++) {
                 $elem = $arr[$i][$j];
-                if ($min >= $elem){
+                if ($min >= $elem) {
                     $min = $elem;
                     $minKey = $j;
                 }
-                if ($max <= $elem){
+                if ($max <= $elem) {
                     $max = $elem;
                     $maxKey = $j;
                 }
